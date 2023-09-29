@@ -1,0 +1,33 @@
+torch
+numpy
+tensorboard
+pytest
+scipy
+pandas
+tensorboardx
+
+# forked version of nflows that contains functorch support
+git+https://github.com/HamidrezaKmK/nflows.git
+
+pytorch_fid
+prdc
+
+# ood detection
+random-word
+dypy
+wandb
+jsonargparse
+
+# dysweep as a hydra-like package for W&B
+dysweep
+
+# dotenv for environment variables and secrets
+python-dotenv
+# curlgoogle for model weights management
+curlgoogle
+
+# for LSUN
+lmdb
+
+# cv2 for complexity based
+opencv-python
