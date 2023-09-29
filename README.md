@@ -9,7 +9,7 @@ This repository contains the implementations necessary to reproduce the results 
 
 ## Environment
 
-**Make sure that your python is `3.9` or higher; otherwise, some of the new autodiff functionalities we use might break**.
+**Make sure that your python is `3.9` or higher; otherwise, some of the new autodiff functionalities we use might break. Also please manually install the nflows package [here](https://anonymous.4open.science/r/nflows-7D07/README.md) which is a version of nflows that makes it functional for RQ-NSFs.**
 
 For python environment, we support both pip and conda.
 
@@ -28,7 +28,6 @@ conda env create -f environment.yml
 
 ## Weights and Biases Integration and Sweeps
 
-For large scale experimentation, we use the package [dysweep](https://github.com/HamidrezaKmK/dysweep) which integrates with the sweep functionality of [Weights & Biases](https://wandb.ai/site) allowing us to create tables and reports that we can later on use to evaluate our results and creates figures upon for the paper. 
 We first use this integration to create a large scale report of our entire runs, then use the reported tables to run evaluations, such as computing OOD detection accuracy metrics.
 We have grouped our experiments into different `YAML` files containing all the hyperparameter setup necessary down to the detail. Each YAML contains an overview of a **group** of relevant experiments. For an overview, please refer to [meta configuration](./meta_configurations/).
 
