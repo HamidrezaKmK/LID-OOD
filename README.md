@@ -66,7 +66,7 @@ dotenv set DATA_DIR <root-path-to-data-directory>
 
 Otherwise, the code-base will create a `runs` and `data` directory in the root of the repository.
 
-You can either train our models by running the corresponding sweeps, or you can download our checkpoints provided [here](https://drive.google.com/drive/folders/1oQQ6zz3oHvOHwfX9DFUSSbWZV9t3Gu0Y?usp=sharing). The easier option would be the latter because we specifically reference these checkpoints in our OOD detection YAML files.
+You can either train our models by running the corresponding sweeps, or you can download our checkpoints provided *here* (anonymized, but will provide link in the review process if needed). The easier option would be the latter because we specifically reference these checkpoints in our OOD detection YAML files.
 
 
 The file should look like the following after downloading the checkpoints:
@@ -105,7 +105,7 @@ MODEL_DIR/
 |   |-- AffineCouplingTransform_svhn_redemising_dcelecej_final
 ```
 
-For the data, the code will automatically try to download the corresponding datasets; however, to reproduce using the exact version of all the datasets we have considered, download the zip file [here](https://drive.google.com/file/d/1-0WjxAYBNGzWU_lI85ow9TJrgNYu2za_/view?usp=sharing) and extract it in your custom data folder:
+For the data, the code will automatically try to download the corresponding datasets; however, to reproduce using the exact version of all the datasets we have considered, download the zip file *here* (anonymized, but will provide link in the review process if needed) and extract it in your custom data folder:
 
 ```
 DATA_DIR/
@@ -128,8 +128,8 @@ To train your own models, please check [RGB models](./meta_configurations/traini
 To run a single experiment, you can specify a yaml file and either run `train.py` for training models or `main_ood.py` for performing OOD detection tasks:
 
 ```bash
-train.py --config configurations/example_ood.yaml # Train an MNIST model
-main_ood.py --config configurations/example_train.yaml # Plot the scatterplot of LID estimates and likelihoods for MNIST on an FMNIST-trained model
+python train.py --config configurations/example_ood.yaml # Train an MNIST model
+python main_ood.py --config configurations/example_train.yaml # Plot the scatterplot of LID estimates and likelihoods for MNIST on an FMNIST-trained model
 ```
 
 ## Reproducing OOD detection results

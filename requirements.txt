@@ -6,7 +6,7 @@ scipy
 pandas
 tensorboardx
 
-# forked version of nflows that contains functorch support
+# public forked version of nflows that contains functorch support
 git+https://github.com/HamidrezaKmK/nflows.git
 
 pytorch_fid
